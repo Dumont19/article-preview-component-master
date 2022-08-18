@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.5rem;
+  background-color: hsl(210deg, 46%, 95%);
+  width: 100%;
+  height: 100vh;
+  font-size: 13px;
+  font-family: "Manrope", sans-serif;
+}
+
+ul li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 340px;
+}
+
+.card {
+  width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: hsl(0deg, 0%, 100%);
+  box-shadow: 0px 15px 30px -15px hsla(0deg, 0%, 0%, 0.1);
+}
+
+.image {
+  position: relative;
+}
+
+.image img {
+  width: 100%;
+}
+
+.content {
+  padding: 2rem 2.7rem 1.3rem 2.7em;
+}
+
+.texts h3 {
+  color: hsl(217deg, 19%, 35%);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.texts p {
+  color: hsl(214deg, 17%, 51%);
+  text-align: left;
+  line-height: 1.3rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.infos {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .avatar {
+  width: 2.5rem;
+  border-radius: 50%;
+  margin-right: 1.2rem;
+}
+
+.share {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: hsl(210deg, 46%, 95%);
+}
+
+.share img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.name-date span {
+  color: hsl(217deg, 19%, 35%);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.name-date p {
+  color: hsl(212deg, 23%, 69%);
+  font-size: 0.8rem;
+}
+
+.open-share {
+  display: none;
+  padding: 1rem 2rem;
+  background-color: hsl(217deg, 19%, 35%);
+  width: 100%;
+}
+.open-share ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.open-share li:hover {
+  transform: scale(1.5);
+  transition: 0.6s;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+}
+.social-media p {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  color: hsl(212deg, 23%, 69%);
+  margin-right: 1rem;
+}
+
+.share-open {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(214deg, 17%, 51%);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.share-open img {
+  width: 1rem;
+  height: 1rem;
+  filter: brightness(100);
+}
+.share-open img:hover {
+  transform: scale(1.5);
+  transition: 0.5s ease;
+}
+
+.closed-share {
+  display: flex;
+  padding: 1rem 2.2rem;
+}
+
+/*# sourceMappingURL=style.css.map */
