@@ -4,32 +4,21 @@ const openShare = document.querySelector('.open-share')
 const closedShare = document.querySelector('.closed-share')
 
 function showShareDesktop() {
-    if (document.body.clientWidth >= 840) {
+    if (document.body.clientWidth > 820) {
         share.addEventListener('click', () => {
             openShare.classList.toggle('hide')
         })
-    } 
-}
-showShareDesktop()
+    }
 
-function showShareMobile() {
-    if (document.body.clientWidth < 840) {
+    if (document.body.clientWidth < 820) {
         share.addEventListener('click', () => {
-            if (openShare.style.display = 'none') {
-                openShare.style.display = 'flex'
-                closedShare.style.display = 'none'
-            }
-
-        shareOpen.addEventListener('click', () => {
-            if(openShare.style.display === 'flex') {
-                openShare.style.display = 'none'
-                closedShare.style.display = 'flex'
-            }
-        })
+            openShare.classList.toggle('hide')
+            closedShare.style.display = 'none'
         })
     }
 }
-showShareMobile()
+showShareDesktop()
+
 
 
 
