@@ -6,7 +6,7 @@
 
 .card
     width: 100%
-    border-radius: 1rem
+    border-radius: .7rem
     overflow: hidden
     background-color: variables.$white
     box-shadow: 0px 15px 30px -15px hsl(0, 0%, 0%, .1)
@@ -82,6 +82,9 @@ footer .avatar
         transform: scale(1.5)
         transition: .6s 
 
+.open-share.hide
+    display: flex
+
 .social-media
     display: flex
     align-items: center
@@ -101,20 +104,103 @@ footer .avatar
     width: 2rem
     height: 2rem
     border-radius: 50%
+    transition: 1s
 
 .share-open img
     width: 1rem
     height: 1rem
     filter: brightness(100)
 
-    &:hover
-        transform: scale(1.5)
-        transition: .5s ease
-
 .closed-share
     display: flex
-    padding: 1rem 2.2rem
+    padding-top: 2.3rem
 
+
+
+@media (min-width: 820px)
+    .container
+        max-width: 700px
+
+    .card
+        position: relative
+        display: grid
+        overflow: visible
+        grid-template-columns: 40% 60%
+        box-shadow: 0px 50px 35px -15px hsl(220, 50%, 30%, .1)
+
+    .image img
+        border-radius: .7rem 0 0 .7rem
+        height: 100%
+
+    .content
+        padding-right: 2.5rem
+        padding-bottom: 1.5rem
+
+    .content h3
+        font-size: 1.2rem
+        margin-bottom: .6rem
+
+    .content p
+        font-size: .75rem
+        margin-right: .6rem
+
+    .closed-share
+        padding-top: 1rem
+
+    .share:hover
+        background-color: variables.$desatureted-dk-blue
+        transition: .3s
+
+    .share > img:hover
+        filter: brightness(100)
+        transition: .3s
+
+    .share-open
+        display: none
+
+    .open-share
+        display: none
+        position: absolute
+        top: 7.5rem
+        left: 32.5rem
+        width: 15rem
+        border-radius: .5rem
+        box-shadow: 0px 15px 30px hsl(220, 50%, 30%, .2)
+        transition: .3s
+        animation: dropDown 1s forwards
+
+    .open-share::after
+        content: ''
+        display: block
+        position: relative
+        top: 2rem
+        right: 5.7rem
+        width: 0
+        height: 0
+        border-left: .7rem solid transparent
+        border-right: .7rem solid transparent
+        border-top: .7rem solid variables.$very-dk-gray-blue
+
+    .open-share.hide
+        display: flex
+
+    @keyframes dropDown
+        0%
+            top: 0
+            
+        100%
+            top: 7.5rem
+            
+
+
+        
+
+
+
+        
+
+    
+    
 
 
         
