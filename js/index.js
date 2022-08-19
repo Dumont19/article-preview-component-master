@@ -34,21 +34,3 @@ showShareMobile()
 
 
 
-// shareOpen.addEventListener('click', () => {
-//     openShare.style.display = 'none'
-//     closedShare.style.display = 'flex'
-// })
-
-
-//     if (openShare.style.display = 'none') {
-//         openShare.style.display = 'flex'
-//     }
-    
-
-// })
-
-// share.addEventListener('click', () => {
-//     openShare.style.display = 'none'
-// })
-
-
