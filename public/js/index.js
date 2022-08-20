@@ -3,19 +3,25 @@ const shareOpen = document.querySelector('.share-open')
 const openShare = document.querySelector('.open-share')
 const closedShare = document.querySelector('.closed-share')
 
-function showShareDesktop() {
-    if (document.body.clientWidth >= 820) {
-        share.addEventListener('click', () => {
-            openShare.classList.toggle('hide')
-        })
+share.addEventListener('click', () => {
+    if (window.innerWidth >= 820) {
+        openShare.classList.toggle('hide')
     } else {
-        share.addEventListener('click', () => {
-            openShare.classList.toggle('hide')
-            closedShare.style.display = 'none'
-        })
+        openShare.style.display = 'flex'
+        closedShare.style.display = 'none'
     }
-}
-showShareDesktop()
+})
+
+shareOpen.addEventListener('click', () => {
+    if (window.innerWidth < 820) {
+        openShare.style.display = 'none'
+        closedShare.style.display = 'flex'
+    }
+})
+
+window.addEventListener('resize', () => {
+    location.reload()
+})
 
 
 
